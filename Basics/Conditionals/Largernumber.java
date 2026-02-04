@@ -13,6 +13,10 @@ public class Largernumber
         {
             System.out.println("The greatest number is "+num1);
         }
+        else if(num1 == num2)
+        {
+            System.out.println("The numbers "+num1+" and "+num2+" are equal");
+        }
         else
         {
             System.out.println("The greatest number is "+num2);
