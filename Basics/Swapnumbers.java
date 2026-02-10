@@ -15,5 +15,6 @@ public class Swapnumbers
         num1 = num2;    //num1 = 20
         num2 = temp;    //num2 = 10
         System.out.println("The two numbers after swapping: "+num1+ " and " +num2);
+        scan.close();
     }
 }

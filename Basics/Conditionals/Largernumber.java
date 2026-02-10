@@ -21,5 +21,6 @@ public class Largernumber
         {
             System.out.println("The greatest number is "+num2);
         }
+        scan.close();
     }
 }
