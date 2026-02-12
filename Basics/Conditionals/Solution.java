@@ -6,14 +6,20 @@ class Solution
         public static void main(String[] args)
         {
             Scanner scan = new Scanner(System.in);
-            int[] nums = {3,2,1,5,6,4};
-            Arrays.sort(nums);
-            System.out.println(Arrays.toString(nums));
+            System.out.print("Enter the size of an array: ");
+            int size = scan.nextInt();
+            int[] array = new int[size];
+            for(int i = 0; i<array.length;i++)
+            {
+                System.out.print("Enter the "+(i+1)+" Element in array: ");
+                array[i] = scan.nextInt();
+            }
+            Arrays.sort(array);
+            System.out.println(Arrays.toString(array));
             System.out.print("Enter the largest Element to be found: ");
             int largest = scan.nextInt();
-            System.out.println("The "+largest+" largest Element is "+nums[nums.length-largest]);
+            System.out.println("The "+largest+" largest Element is "+array[array.length-largest]);
             scan.close();
         }
 }
 
-}
