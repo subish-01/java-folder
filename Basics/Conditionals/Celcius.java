@@ -11,6 +11,6 @@ public class Celcius
         double celcius = scan.nextDouble();
         double fahrenheit = celcius*1.8 + 32;
         System.out.println("Fahrenheit in your area is: "+fahrenheit);
-
+        scan.close();
     }
 }
